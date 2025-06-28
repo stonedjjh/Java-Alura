@@ -7,13 +7,14 @@ Aunque este proyecto puede parecer muy elemental, mi intención es que sirva com
 Estructura del Proyecto
 El repositorio está organizado en subcarpetas, donde cada una representa un ejercicio o concepto específico del curso de Java.
 
-Java-Alura/
+```Java-Alura/
 ├───Ejercicios
 │   └───PrimeraClase
 │       └───src
 │       └───README.md <-- Este Archivo
 └───primerprograma
 └───src
+```
 Contenido Específico de este Ejercicio (PrimeraClase)
 Este ejercicio incluye:
 
