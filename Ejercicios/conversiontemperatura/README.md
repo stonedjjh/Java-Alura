@@ -12,7 +12,7 @@ El ejercicio se centra en el uso de variables para almacenar y manipular datos, 
 
 ## Contenido del Proyecto
 
-Este proyecto contiene la clase `Main.java` (o el nombre de la clase principal que hayas usado), que incluye:
+Este proyecto contiene la clase `Main.java`, que incluye:
 
 * **Variables de Temperatura:** Uso de variables de tipo `double` para almacenar la temperatura en Celsius y el resultado en Fahrenheit.
 * **Fórmula de Conversión:** Aplicación de la fórmula `(temperatura * 1.8) + 32` para realizar la conversión.
@@ -33,8 +33,7 @@ Para ejecutar este programa en tu entorno local, sigue estos pasos:
     Si aún no lo has hecho, clona el repositorio completo donde se encuentra este ejercicio:
     ```bash
     git clone [https://github.com/stone_djjh/Java-Alura.git](https://github.com/stone_djjh/Java-Alura.git)
-    ```
-    (Asegúrate de reemplazar `tu-usuario` y `tu-repositorio-java` con los datos correctos de tu repositorio).
+    ```   
 
 2.  **Abre el Proyecto en IntelliJ IDEA:**
     * Abre IntelliJ IDEA.
@@ -43,7 +42,7 @@ Para ejecutar este programa en tu entorno local, sigue estos pasos:
     * IntelliJ debería reconocerlo automáticamente como un proyecto Java.
 
 3.  **Ejecuta la Clase Principal (ej. `Main`):**
-    * Dentro de IntelliJ IDEA, abre el archivo `src/Main.java` (o el nombre de tu clase principal).
+    * Dentro de IntelliJ IDEA, abre el archivo `src/Main.java`.
     * Busca el método `main` y haz clic en el pequeño icono verde de "Play" (Run) que aparece en el margen del editor junto a la declaración del método. Alternativamente, puedes usar el menú `Run` > `Run 'Main'`.
     * La salida del programa, mostrando la conversión de temperatura, aparecerá en la ventana de la consola de IntelliJ IDEA.
 
