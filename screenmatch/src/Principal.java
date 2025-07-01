@@ -1,4 +1,6 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
+import com.aluracursos.screenmatch.calculos.FiltroRecomendacion;
+import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -47,6 +49,15 @@ public class Principal {
                 + calculadora.getTiempoTotal()
                 + " Minutos.");
 
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(miPelicula);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("La casa Targeria");
+        episodio.setSerie(casaDragon);
+        episodio.setTotalVisualizaciones(10);
+        filtroRecomendacion.filtra(episodio);
 /*        System.out.println("Mi pelicula es: " + otraPelicula.nombre);
         System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
 */
