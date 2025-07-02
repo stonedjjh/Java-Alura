@@ -1,0 +1,34 @@
+# Ignorar archivos generados por Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.log
+*.lock
+
+# Ignorar carpetas de compilación y salida
+/bin/
+/out/
+/target/
+/build/
+
+# Ignorar archivos de IDE (IntelliJ IDEA, VS Code, Eclipse, NetBeans)
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+*.form
+
+# Ignorar archivos temporales
+*.tmp
+*~
+*.bak
+*.swp
+*.swo
