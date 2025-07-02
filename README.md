@@ -1,57 +1,40 @@
-# 📚 Curso: Java Orientado a Objetos (Alura Latam) 📚
+# 📚 Practicando Java: Módulos de Aprendizaje 📚
 
-Este repositorio es la sección dedicada al curso **"Java Orientado a Objetos"** de Alura Latam. Aquí se exploran en profundidad los pilares fundamentales de la Programación Orientada a Objetos (POO) en Java, aplicando los conceptos en ejercicios prácticos y la construcción de proyectos.
-
----
-
-## ✨ Contenido del Curso y Aprendizajes Clave
-
-En este módulo, me he enfocado en comprender y aplicar los siguientes conceptos:
-
-* **Clases y Objetos**: Definición de clases, creación de objetos e instanciación.
-* **Encapsulamiento**: Principios de ocultamiento de información y uso de getters/setters.
-* **Constructores**: Creación y uso de constructores para inicializar objetos.
-* **Herencia**: Extensión de clases, conceptos de superclases y subclases.
-* **Polimorfismo**: Sobreescritura de métodos y manejo de objetos por referencias de supertipo.
-* **Interfaces**: Definición de contratos y patrones de comportamiento.
-* **Clases Abstractas**: Diseño de jerarquías con clases base incompletas.
-* **Relaciones entre Objetos**: Composición y agregación.
-* **(Añade más temas a medida que los veas en el curso, ej. manejo de excepciones, tipos genéricos, etc.)**
+Este repositorio contiene una colección de proyectos y ejercicios realizados como parte de mi proceso de aprendizaje en Java. Actualmente, se enfoca en el módulo de Listas y Colecciones de Datos.
 
 ---
 
-## 📁 Estructura del Directorio
+## 🚀 Estructura del Proyecto
 
-* **`miprimerprograma/`**: Contiene los archivos base de mi primer contacto con Java y la configuración inicial. Sirve como referencia continua de los fundamentos aprendidos.
-* **`Ejercicio/`**: Directorio para los ejercicios prácticos individuales de cada tema del curso. Cada subdirectorio corresponde a un ejercicio específico.
-    * *(Ej: ``) -*
-* **`Proyectos/`**: Directorio para los proyectos más grandes y complejos que integren varios conceptos de POO a lo largo del curso.
-    * *(Ej: ``) - *
+El código está organizado de la siguiente manera:
 
----
-
-## 🚀 Cómo Ejecutar los Proyectos
-
-Para ejecutar cualquiera de los proyectos o ejercicios:
-
-1.  Asegúrate de tener un **JDK (Java Development Kit)** instalado en tu máquina.
-2.  Navega al directorio del proyecto específico (ej. ``).
-3.  Compila los archivos Java: `javac src/*.java` (o usa tu IDE para construir el proyecto).
-4.  Ejecuta la clase principal: `java -cp src NombreClasePrincipal` (o ejecuta desde tu IDE).
+* **`screenmatch/`**: Base del proyecto para el módulo de Java: Listas y Colecciones de Datos. Dentro de esta carpeta, encontrarás el código fuente del proyecto:
+  * `src/com/aluracursos/screenmatch/...`: Clases y modelos del proyecto.
 
 ---
 
-## 🤝 Contribuciones (si aplica)
+## 📝 Módulo: Java: Listas y Colecciones de Datos
 
-Este es un repositorio personal de aprendizaje, pero siempre estoy abierto a comentarios o sugerencias para mejorar mi código.
+En este curso de Java, te sumergirás en el mundo de las estructuras de datos, aprendiendo a manejar colecciones de objetos de manera eficiente.
+
+### Lo que aprenderás en este curso:
+
+* Representar una lista de objetos en Java.
+* Comprender el funcionamiento y las ventajas de la clase `java.util.ArrayList`.
+* Manipular listas de objetos: añadir, eliminar, buscar y acceder elementos.
+* Ordenar una lista según criterios específicos.
+* Realizar el "casting" de objetos y verificar sus tipos con `instanceof`.
+
+### Contenido del Curso (Aulas):
+
+Este módulo se desarrolla a través de las siguientes aulas, cada una enfocada en un aspecto clave del manejo de colecciones:
+
+* **Colección de películas**
+* **Construyendo objetos**
+* **Lista de objetos distintos**
+* **Ordenando datos**
+* **Consolidando conocimientos**
 
 ---
 
-## 🔗 Enlace al Repositorio Principal
-
-Puedes encontrar el repositorio completo de mi "Viaje de Programación Java" (incluyendo otros cursos) aquí:
-[Repositorio Principal Java-Alura](https://github.com/stonedjjh/Java-Alura)
-
----
-
-**© 2025 Daniel Jiménez / stonedjjh**
+Daniel Jiménez 2025
