@@ -9,9 +9,7 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
         //se instancia un objeto llamado miPelicula que es de clase com.aluracursos.screenmatch.modelos.Pelicula
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("Encanto");
-        miPelicula.setFechaDeLanzamiento(2021);
+        Pelicula miPelicula = new Pelicula("Encanto", 2021);
         miPelicula.setDuracionEnMinutos(120);
         miPelicula.setIncluidoEnElPlan(true);
 
@@ -24,9 +22,7 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
-        Serie casaDragon = new Serie();
-        casaDragon.setNombre("La casa del Dragon");
-        casaDragon.setFechaDeLanzamiento(2022);
+        Serie casaDragon = new Serie("La casa del Dragon",2022);
         casaDragon.setTemporadas(1);
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setEpisodiosPorTemporada(10);
@@ -37,9 +33,7 @@ public class Principal {
         /*System.out.println("Mi pelicula es: " + miPelicula.nombre);
         System.out.println("Su fecha de lanzamiento es: " + miPelicula.fechaDeLanzamiento);*/
 
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
-        otraPelicula.setFechaDeLanzamiento(1998);
+        Pelicula otraPelicula = new Pelicula("Matrix", 1998);
         otraPelicula.setDuracionEnMinutos(180);
 
 
@@ -63,9 +57,7 @@ public class Principal {
 /*        System.out.println("Mi pelicula es: " + otraPelicula.nombre);
         System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
 */
-        var peliculaDeBruno = new Pelicula();
-        peliculaDeBruno.setNombre("El señor de los anillos");
-        peliculaDeBruno.setDuracionEnMinutos(180);
+        var peliculaDeBruno = new Pelicula("El señor de los anillos", 180);
         peliculaDeBruno.setFechaDeLanzamiento(2001);
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
