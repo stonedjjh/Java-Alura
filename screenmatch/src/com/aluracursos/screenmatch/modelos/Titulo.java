@@ -14,6 +14,11 @@ public class Titulo {
 
     private int totalDeLasEvaluaciones;
 
+    public Titulo(String nombre, int fechaDeLanzamiento) {
+        this.nombre = nombre;
+        this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -36,10 +41,6 @@ public class Titulo {
 
     public int getTotalDeLasEvaluaciones(){
         return totalDeLasEvaluaciones;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
