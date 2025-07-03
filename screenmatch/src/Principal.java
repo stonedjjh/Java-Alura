@@ -4,6 +4,8 @@ import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         //se instancia un objeto llamado miPelicula que es de clase com.aluracursos.screenmatch.modelos.Pelicula
@@ -61,5 +63,20 @@ public class Principal {
 /*        System.out.println("Mi pelicula es: " + otraPelicula.nombre);
         System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
 */
+        var peliculaDeBruno = new Pelicula();
+        peliculaDeBruno.setNombre("El señor de los anillos");
+        peliculaDeBruno.setDuracionEnMinutos(180);
+        peliculaDeBruno.setFechaDeLanzamiento(2001);
+
+        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(miPelicula);
+        listaDePeliculas.add(otraPelicula);
+        listaDePeliculas.add(peliculaDeBruno);
+
+        System.out.println("tamaño de la lista: " + listaDePeliculas.size());
+        System.out.println("La primera pelicula es: " + listaDePeliculas.get(0).getNombre());
+
+        System.out.println(listaDePeliculas);
+        System.out.println("toString de la Pelicula: " + listaDePeliculas.get(0).toString());
     }
 }
