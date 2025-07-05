@@ -1,40 +1,25 @@
-# 📚 Practicando Java: Módulos de Aprendizaje 📚
+# Curso Java: Consumir API, Escribir Archivos y Manejar Errores
 
-Este repositorio contiene una colección de proyectos y ejercicios realizados como parte de mi proceso de aprendizaje en Java. Actualmente, se enfoca en el módulo de Listas y Colecciones de Datos.
+Este directorio (`Screenmatch`) está dedicado a los proyectos y ejercicios del curso "Java: Consumir API, Escribir Archivos y Manejar Errores". A lo largo de este curso, exploraremos cómo las aplicaciones Java pueden interactuar con servicios externos, gestionar datos y asegurar su robustez.
 
----
+## Objetivo del Curso
 
-## 🚀 Estructura del Proyecto
+El principal objetivo de este curso es equipar al desarrollador Java con las habilidades necesarias para construir aplicaciones más dinámicas e interconectadas. Específicamente, aprenderemos a:
 
-El código está organizado de la siguiente manera:
+* **Consumir APIs HTTP:** Realizar solicitudes (`requests`) a servicios web y procesar sus respuestas (`responses`).
+* **Manipular Datos JSON:** Entender la estructura JSON, recibirla de APIs y convertirla eficientemente a objetos Java, y viceversa, utilizando bibliotecas como **Gson**.
+* **Manejar Excepciones:** Implementar estrategias robustas para identificar y gestionar errores (`exceptions`) que pueden ocurrir durante la ejecución del programa, especialmente al interactuar con recursos externos o al manipular archivos.
+* **Persistir Datos en Archivos:** Leer y escribir información en diferentes formatos de archivo utilizando las clases del paquete `java.io`.
 
-* **`screenmatch/`**: Base del proyecto para el módulo de Java: Listas y Colecciones de Datos. Dentro de esta carpeta, encontrarás el código fuente del proyecto:
-  * `src/com/aluracursos/screenmatch/...`: Clases y modelos del proyecto.
+## Estructura del Proyecto
 
----
+Dentro de este directorio, se crearán subcarpetas para organizar los ejercicios y proyectos a medida que avancemos en cada módulo del curso. La idea es mantener el código ordenado y modular, reflejando el progreso a través del temario. Solo se crearán nuevas carpetas si la necesidad de organizar el código lo justifica claramente.
 
-## 📝 Módulo: Java: Listas y Colecciones de Datos
+## Rama del Curso
 
-En este curso de Java, te sumergirás en el mundo de las estructuras de datos, aprendiendo a manejar colecciones de objetos de manera eficiente.
-
-### Lo que aprenderás en este curso:
-
-* Representar una lista de objetos en Java.
-* Comprender el funcionamiento y las ventajas de la clase `java.util.ArrayList`.
-* Manipular listas de objetos: añadir, eliminar, buscar y acceder elementos.
-* Ordenar una lista según criterios específicos.
-* Realizar el "casting" de objetos y verificar sus tipos con `instanceof`.
-
-### Contenido del Curso (Aulas):
-
-Este módulo se desarrolla a través de las siguientes aulas, cada una enfocada en un aspecto clave del manejo de colecciones:
-
-* **Colección de películas**
-* **Construyendo objetos**
-* **Lista de objetos distintos**
-* **Ordenando datos**
-* **Consolidando conocimientos**
+Todo el progreso relacionado con este curso se gestiona en la rama:
+`Java-consumir-API-escribir-archivos-y-manejar-errores`
 
 ---
-
-Daniel Jiménez 2025
+Autor: Daniel Jiménez
+---
