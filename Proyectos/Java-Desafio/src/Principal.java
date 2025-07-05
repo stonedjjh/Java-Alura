@@ -9,9 +9,9 @@ public class Principal { // O el nombre que le des a tu clase principal
         System.out.println("Bienvenido al Stone Bank por favor ingrese el limite de la tarjeta de credito");
         Tarjeta miTarjeta = new Tarjeta(teclado.nextDouble());
         List<Producto> carritoDeCompra = new LinkedList<Producto>();
-        carritoDeCompra.add(new Producto("Pantalon",20));
+        /*carritoDeCompra.add(new Producto("Pantalon",20));
         carritoDeCompra.add(new Producto("Camisa",50));
-        carritoDeCompra.add(new Producto("Cinturon",15));
+        carritoDeCompra.add(new Producto("Cinturon",15));*/
 
 
         int opcion = -1;
