@@ -1,0 +1,12 @@
+[
+  {
+    "Titulo": "The Phantom Menace",
+    "NumeroEpisodio": 1,
+    "FechaLanzamiento": "1999-05-19"
+  },
+  {
+    "Titulo": "A New Hope",
+    "NumeroEpisodio": 4,
+    "FechaLanzamiento": "1977-05-25"
+  }
+]
