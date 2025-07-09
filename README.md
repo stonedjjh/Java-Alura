@@ -1,46 +1,102 @@
----
-# 🚀 Curso Java: Nuevo Proyecto con Spring Framework y Manipulación de Datos
+# 🚀 Java: Persistencia con Spring Data JPA 🚀
+
+Este segmento del repositorio marca mi incursión profunda en la **persistencia de datos** y las **consultas avanzadas** en Java, utilizando el potente *framework* de **Spring Data JPA**. Es una continuación directa de mi progreso en el proyecto ScreenMatch, donde ahora el enfoque es dotar a la aplicación de capacidades robustas para interactuar con bases de datos.
 
 ---
 
-## 📄 Descripción General
+## 📚 Estructura del Repositorio y Contenido
 
-Este directorio contiene los proyectos y ejercicios realizados como parte de un nuevo curso de Java, enfocado en la creación de aplicaciones con **Spring Framework** y el procesamiento avanzado de datos. A lo largo de esta formación, exploramos cómo construir aplicaciones de línea de comandos robustas y cómo manejar datos eficientemente.
-
----
-
-## 🎯 Objetivo del Curso
-
-El principal objetivo de este curso fue equipar al desarrollador Java con las habilidades necesarias para iniciar proyectos con Spring y manipular flujos de datos complejos. Específicamente, aprendimos a:
-
-* **Utilizar Spring Framework:** Iniciamos un nuevo proyecto de línea de comandos, comprendiendo su estructura y las bases para un desarrollo modular.
-* **Deserializar Datos con Jackson:** Dominamos la transformación de datos JSON en objetos Java utilizando la potente biblioteca **Jackson**, esencial para el consumo de APIs.
-* **Aplicar Buenas Prácticas con Funciones Lambda:** Implementamos funciones lambda para escribir código más conciso, legible y funcional, mejorando la calidad y el mantenimiento del proyecto.
-* **Manipular Flujo de Datos con Streams:** Exploramos a fondo la **Streams API** de Java, utilizando flujos de datos para procesar colecciones de manera eficiente y declarativa.
-* **Implementar Estadísticas Personalizadas:** Desarrollamos lógica para generar estadísticas específicas a partir de los datos procesados, extrayendo información valiosa.
+Manteniendo la organización, este nuevo módulo de aprendizaje reside en una rama dedicada, lo que permite un historial de *commits* claro y una exploración enfocada en las técnicas de persistencia.
 
 ---
 
-## 📚 Estructura del Contenido (Aulas)
+### 💡 Rama de Curso Específico
 
-El curso se dividió en las siguientes aulas, organizando el progreso y los ejercicios de forma modular:
+`persistencia-de-datos-y-consultas-con-Spring-Data-JPA`:
+* **Descripción**: Esta rama abarca los fundamentos y las técnicas avanzadas para manejar la persistencia de datos en aplicaciones Java con **Spring Data JPA**. Desde el mapeo de entidades hasta la realización de consultas complejas y la integración con APIs externas para enriquecer la aplicación.
 
-* **Un nuevo proyecto utilizando Spring Framework:** Vimos la estructura inicial de un proyecto Spring, la inferencia de tipos con `var`, el consumo de APIs, la modularización de código, la serialización y deserialización, la creación de interfaces con métodos genéricos y la inclusión de nuevas dependencias con Maven.
-* **Modelando los datos de la aplicación:** Profundizamos en cómo estructurar las clases de Java para representar y manejar los datos de la aplicación de manera efectiva.
-* **Manipulando con flujos las colecciones de datos:** Exploramos las operaciones fundamentales de la API de Streams para filtrar, mapear y transformar colecciones.
-* **Explorando más flujos y generando estadísticas:** Avanzamos en el uso de Streams para operaciones más complejas y la implementación de lógica para calcular estadísticas personalizadas.
-* **Consolidando los conocimientos:** Un módulo para repasar y aplicar todos los conceptos aprendidos en ejercicios prácticos.
+* **Ir a la rama**: `git checkout persistencia-de-datos-y-consultas-con-Spring-Data-JPA`
 
 ---
 
-## 🌿 Rama del Curso
+## ✨ Habilidades y Aprendizajes Clave Adquiridos
 
-Todo el progreso relacionado con este curso se gestiona en esta rama del repositorio.
+En este curso, he consolidado y expandido mis habilidades en:
+
+* **Spring Data JPA**: Dominio de los **repositorios** para operaciones CRUD simplificadas y personalizadas.
+* **Mapeo Objeto-Relacional (ORM)**: Configuración y uso de JPA para mapear clases Java a tablas de base de datos.
+* **Modelado de Relaciones**: Implementación de relaciones entre entidades (`@OneToOne`, `@OneToMany`, `@ManyToOne`, `@ManyToMany`).
+* **Estrategias de Consulta**: Exploración de diversas formas de consultar la base de datos, incluyendo métodos derivados de nombres, `@Query` con JPQL y posiblemente SQL nativo.
+* **Seguridad de Credenciales**: Uso de **variables de entorno** para gestionar de forma segura información sensible (ej. claves de base de datos, API Keys).
+* **Integración de APIs**: Conexión e interacción con la **API de ChatGPT** para añadir funcionalidades inteligentes a la aplicación.
 
 ---
 
-## 👨‍💻 Autor
+## 🛠️ Tecnologías y Herramientas Utilizadas
 
-Daniel Jiménez
+* **Lenguaje**: Java
+* **Framework**: Spring Boot, Spring Data JPA
+* **Base de Datos**: PostgreSQL (o H2 para desarrollo)
+* **Herramienta de Construcción**: Maven
+* **IDE**: IntelliJ IDEA (o tu IDE preferido)
+* **Control de Versiones**: Git & GitHub
+* **Servicios Externos**: API de ChatGPT
 
 ---
+
+## 🚀 Cómo Navegar por Este Repositorio
+
+Si ya tienes el repositorio clonado, simplemente puedes cambiar a esta rama:
+
+1.  **Clonar el repositorio (si aún no lo has hecho)**:
+    ```bash
+    git clone https://github.com/stonedjjh/Java-Alura
+    cd screenmatch
+    ```
+2.  **Cambiar a la rama del curso**:
+    ```bash
+    git checkout persistencia-de-datos-y-consultas-con-Spring-Data-JPA
+    ```
+3.  **Explora el código**: Navega por los directorios `src/main/java/com/aluracursos/screenmatch` para encontrar las entidades, repositorios y servicios relacionados con la persistencia.
+
+---
+
+## ⚙️ Configuración para Ejecutar la Aplicación
+
+Para poner en marcha la aplicación localmente:
+
+1.  Asegúrate de estar en la rama correcta (`persistencia-de-datos-y-consultas-con-Spring-Data-JPA`).
+2.  **Configura tus variables de entorno**: Es crucial para la seguridad de tus credenciales. Puedes crear un archivo `.env` o configurarlas directamente en tu sistema.
+    Ejemplo de `.env`:
+    ```
+    DB_URL=jdbc:postgresql://localhost:5432/screenmatch
+    DB_USERNAME=tu_usuario
+    DB_PASSWORD=tu_contrasena
+    OPENAI_API_KEY=tu_clave_api_chatgpt
+    ```
+    Alternativamente, puedes usar el `application.properties` en `src/main/resources` con valores por defecto o variables de entorno:
+    ```properties
+    spring.datasource.url=${DB_URL:jdbc:postgresql://localhost:5432/screenmatch}
+    spring.datasource.username=${DB_USERNAME:tu_usuario}
+    spring.datasource.password=${DB_PASSWORD:tu_contrasena}
+    openai.api.key=${OPENAI_API_KEY:tu_clave_api_chatgpt}
+    ```
+3.  **Construye el proyecto con Maven**:
+    ```bash
+    mvn clean install
+    ```
+4.  **Ejecuta la aplicación Spring Boot**:
+    ```bash
+    mvn spring-boot:run
+    ```
+
+---
+
+## 📞 Contacto
+
+No dudes en contactarme si tienes alguna pregunta o comentario sobre este proyecto o mi progreso en Java.
+
+[LinkedIn]([https://www.linkedin.com/in/daniel-jimenez-88a2a293/])
+
+---
+© 2025 [Daniel Jiménez / stonedjjh]

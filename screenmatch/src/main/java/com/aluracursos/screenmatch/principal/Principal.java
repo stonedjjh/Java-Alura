@@ -108,7 +108,7 @@ public class Principal {
         DoubleSummaryStatistics est = episodios.stream()
                 .filter(e -> e.getEvaluacion() > 0.0)
                 .collect(Collectors.summarizingDouble(Episodio::getEvaluacion));
-        
+
 
     }
 
