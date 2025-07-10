@@ -96,7 +96,7 @@ Para poner en marcha la aplicación localmente:
 
 No dudes en contactarme si tienes alguna pregunta o comentario sobre este proyecto o mi progreso en Java.
 
-[LinkedIn]([https://www.linkedin.com/in/daniel-jimenez-88a2a293/])
+[LinkedIn](https://www.linkedin.com/in/daniel-jimenez-88a2a293/)
 
 ---
 © 2025 [Daniel Jiménez / stonedjjh]
