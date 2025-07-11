@@ -122,8 +122,6 @@ public class Serie {
                 ", actores='" + actores + '\'' +
                 ", sinopsis='" + sinopsis + '\'' +
                         ", episodios='" + episodios;
-
-
     }
 
 
