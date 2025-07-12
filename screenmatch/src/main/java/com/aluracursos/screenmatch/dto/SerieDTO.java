@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 public record SerieDTO(
+        Long id,
         String titulo,
         Integer totalTemporadas,
         Double evaluacion,
