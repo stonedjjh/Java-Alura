@@ -1,6 +1,5 @@
-package med.voll.api.direccion;
+package med.voll.api.domain.direccion;
 
-import jakarta.annotation.Nullable;
 import jakarta.persistence.Embeddable;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
