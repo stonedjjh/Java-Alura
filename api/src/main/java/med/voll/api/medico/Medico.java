@@ -13,7 +13,7 @@ import med.voll.api.direccion.Direccion;
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 @Entity(name = "Medico")
-@Table(name="edicos")
+@Table(name="medicos")
 public class Medico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class Medico {
     private String nombre;
     private String email;
     private String telefono;
-    private String documento;
+    private String documento_identidad;
 
     @Enumerated(EnumType.STRING)
     private Especialidad especialidad;
@@ -33,7 +33,8 @@ public class Medico {
         this.nombre = datos.nombre();
         this.email = datos.email();
         this.telefono = datos.telefono();
-        this.documento = datos.documento();
+        this.documento_identidad = datos.documento();
+        this.especialidad = datos.especialidad();
         this.direccion = new Direccion(datos.direccion());
     }
 }
