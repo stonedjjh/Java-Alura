@@ -1,73 +1,62 @@
-# 🚀 Java: Creación de API REST con Spring Framework 🚀
+# 🛡️ Spring Boot 3: Aplica las Mejores Prácticas y Protege una API REST 🛡️
 
-Este segmento del repositorio marca mi incursión en la **creación de API RESTful** utilizando el potente **Spring Framework** y su **conexión con una aplicación Front-End**. Es una continuación directa de mi progreso en el proyecto ScreenMatch, donde ahora el enfoque es dotar a la aplicación de capacidades para exponer datos y funcionalidades a través de servicios web, interactuando directamente con una interfaz de usuario.
+¡Bienvenidos al segundo curso de la formación de Spring Boot 3! En esta etapa, nos sumergimos en la **aplicación de buenas prácticas y la protección de APIs REST**, construyendo sobre la base sólida establecida en el curso anterior. Mi nombre es Bruno Darío Fernández Ederbach y fui el instructor que me guio a través de este importante viaje.
 
 ---
 
 ## 📚 Estructura del Repositorio y Contenido
 
-Manteniendo la organización, este nuevo módulo de aprendizaje reside en una rama dedicada, lo que permite un historial de *commits* claro y una exploración enfocada en las técnicas de desarrollo de API REST.
-
----
+Este módulo de aprendizaje se aloja en una nueva rama dedicada, asegurando un historial de _commits_ claro y permitiendo una exploración detallada de las técnicas avanzadas en seguridad y optimización de APIs REST.
 
 ### 💡 Rama de Curso Específico
 
-`creando-tu-primera-API-y-conectandola-al-Front-End`:
-* **Descripción**: Esta rama abarca los fundamentos y las técnicas para construir API RESTful en aplicaciones Java con **Spring Framework**, siguiendo el temario del **"Curso de Spring Boot 3: desarrolla una API REST en Java"**. Desde la comprensión de la arquitectura MVC y el mapeo de rutas hasta la implementación de buenas prácticas con DTOs, el manejo de errores CORS.
-* **Ir a la rama**: `git checkout creando-tu-primera-API-y-conectandola-al-Front-End`
+`aplique-las-mejores-practicas-y-proteja-una-API-Rest`:
+
+- **Descripción**: Esta rama cubre las mejores prácticas para APIs REST, el manejo de errores, y la implementación de mecanismos robustos de autenticación y autorización utilizando Spring Security y JSON Web Tokens (JWT). Es la continuación directa del proyecto desarrollado en el curso anterior de Spring Boot 3.
+- **Ir a la rama**: `git checkout aplique-las-mejores-practicas-y-proteja-una-API-Rest`
+
+---
+
+## 🚀 Requisitos del Curso
+
+Para aprovechar al máximo este curso, es fundamental haber completado el curso anterior de Spring Boot 3. En ese primer curso, se desarrolló la base de una API REST que continuaremos expandiendo y protegiendo aquí. Abordamos temas como:
+
+- Desarrollo de una API REST desde cero con Spring Initializer.
+- Implementación de operaciones CRUD para la entidad `Médico`.
+- Validaciones con Bean Validation.
+- Paginación y ordenación de datos devueltos al cliente.
 
 ---
 
 ## ✨ Habilidades y Aprendizajes Clave Adquiridos
 
-En este curso (parte del **"Curso de Spring Boot 3: desarrolla una API REST en Java"**), he consolidado y expandido mis habilidades en:
+En este curso, he consolidado y expandido mis habilidades en:
 
-### Desarrollo de API REST con Spring Boot
-* Creación desde cero de una API REST en Java con **Spring Boot**.
-* Comprensión y aplicación de la arquitectura **Modelo-Vista-Controlador (MVC)** en el desarrollo web.
-* Mapeo de rutas y definición de *endpoints* utilizando anotaciones de Spring (`@RestController`, `@GetMapping`, `@PostMapping`, `@PutMapping`, `@DeleteMapping`, etc.).
-* Manejo de diferentes tipos de **solicitudes HTTP (GET, POST, PUT, DELETE)** para operaciones CRUD completas.
-* Conexión y suministro de datos desde el back-end hacia aplicaciones front-end.
-* Manejo y resolución de problemas de **CORS (Cross-Origin Resource Sharing)** para la disponibilidad de datos.
+### Buenas Prácticas en el Desarrollo de APIs REST
 
-### Persistencia y Base de Datos
-* Desarrollo de operaciones **CRUD (Create, Read, Update, Delete)** utilizando la base de datos **MySQL**.
-* Uso de **Spring Data JPA** para la persistencia de datos y la simplificación de las interacciones con la base de datos.
-* Implementación de **Flyway** como herramienta de migraciones para la gestión de la evolución del esquema de la base de datos de la API.
+- **Estandarización de Respuestas:** Aprender a estandarizar los retornos de los controladores de la API para ofrecer respuestas consistentes y predecibles al cliente.
+- **Códigos HTTP:** Uso correcto y aplicación de los códigos de estado HTTP para comunicar adecuadamente el resultado de las operaciones de la API.
+- **Tratamiento de Errores:** Gestión avanzada de excepciones en Spring Boot para devolver al usuario final solo los datos relevantes en caso de errores, mejorando la experiencia del consumidor de la API.
 
-### Optimización y Buenas Prácticas de API
-* Implementación de **Data Transfer Objects (DTOs)** y otros conceptos para un diseño de API robusto y eficiente.
-* Realización de **validaciones** de datos utilizando **Bean Validation** para asegurar la integridad de la información.
-* Implementación de **paginación** de los datos de la API para la gestión eficiente de grandes conjuntos de datos.
+### Seguridad y Autenticación en APIs REST
+
+- **Spring Security:** Integración del módulo Spring Security al proyecto para fortalecer la seguridad de la aplicación.
+- **Mecanismos de Autenticación:** Implementación de un sistema de inicio de sesión y autenticación para restringir el acceso a la API.
+- **Control de Acceso (Autorización):** Establecimiento de reglas de autorización para determinar qué usuarios pueden acceder a qué recursos o funcionalidades de la API.
+- **JSON Web Tokens (JWT):** Utilización de JWT como un mecanismo seguro para controlar y verificar el acceso a la API, permitiendo un flujo de autenticación sin estado.
 
 ---
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
 
-* **Lenguaje**: Java
-* **Framework**: Spring Boot, Spring Web
-* **Base de Datos**: MySQL
-* **Herramienta de Migraciones**: Flyway
-* **Herramienta de Construcción**: Maven
-* **IDE**: IntelliJ IDEA (o tu IDE preferido)
-* **Control de Versiones**: Git & GitHub
-
----
-
-## 🚀 Cómo Navegar por Este Repositorio
-
-Si ya tienes el repositorio clonado, simplemente puedes cambiar a esta rama:
-
-1.  **Clonar el repositorio (si aún no lo has hecho)**:
-    ```bash
-    git clone [https://github.com/stonedjjh/Java-Alura.git](https://github.com/stonedjjh/Java-Alura.git)
-    cd Java-Alura
-    ```
-2.  **Cambiar a la rama del curso**:
-    ```bash
-    git checkout creando-tu-primera-API-y-conectandola-al-Front-End    
-    ```
-3.  **Explora el código**: Navega por los directorios `src/main/java/com/aluracursos/api` para encontrar los controladores, DTOs y servicios relacionados con la API.
+- **Lenguaje**: Java
+- **Framework**: Spring Boot 3, Spring Web, Spring Data JPA, **Spring Security**
+- **Base de Datos**: MySQL
+- **Herramienta de Migraciones**: Flyway
+- **Herramienta de Construcción**: Maven
+- **IDE**: IntelliJ IDEA
+- **Control de Versiones**: Git & GitHub
+- **Cliente REST**: Insomnia (para probar la API)
 
 ---
 
@@ -75,8 +64,8 @@ Si ya tienes el repositorio clonado, simplemente puedes cambiar a esta rama:
 
 Para poner en marcha la aplicación localmente:
 
-1.  Asegúrate de estar en la rama correcta (`creando-tu-primera-API-y-conectandola-al-Front-End`).
-2.  Asegúrate de tener una base de datos MySQL configurada y sus credenciales en las variables de entorno o `application.properties`.
+1.  Asegúrate de estar en la rama correcta (`aplique-las-mejores-practicas-y-proteja-una-API-Rest`).
+2.  Asegúrate de tener una base de datos MySQL configurada y sus credenciales en `application.properties` (o `application.yaml`).
 3.  **Construye el proyecto con Maven**:
     ```bash
     mvn clean install
@@ -85,7 +74,7 @@ Para poner en marcha la aplicación localmente:
     ```bash
     mvn spring-boot:run
     ```
-    La API estará disponible en `localhost:8081` (o el puerto configurado en `application.properties`).
+    La API estará disponible en `localhost:8080` (o el puerto configurado).
 
 ---
 
@@ -96,4 +85,5 @@ No dudes en contactarme si tienes alguna pregunta o comentario sobre este proyec
 [LinkedIn](https://www.linkedin.com/in/daniel-jimenez-88a2a293/)
 
 ---
+
 © 2025 [Daniel Jiménez / stonedjjh]
