@@ -21,18 +21,38 @@ public class Paciente {
 
     private String nombre;
     private String email;
-    private String documentoIdentidad;
+    private String documento_identidad;
     private String telefono;
+    private Boolean activo;
+
+
 
     @Embedded
     private Direccion direccion;
 
+
     public Paciente(DatosRegistroPaciente datos) {
+        this.activo = true;
         this.nombre = datos.nombre();
         this.email = datos.email();
         this.telefono = datos.telefono();
-        this.documentoIdentidad = datos.documento_identidad();
+        this.documento_identidad = datos.documento_identidad();
         this.direccion = new Direccion(datos.direccion());
+    }
+
+    public void atualizarInformacion(DatosActualizacionPaciente datos) {
+        if (datos.nombre() != null)
+            this.nombre = datos.nombre();
+
+        if (datos.telefono() != null)
+            this.telefono = datos.telefono();
+
+        if (datos.direccion() != null)
+            direccion.actualizarDireccion(datos.direccion());
+    }
+
+    public void desactivar() {
+        this.activo = false;
     }
 
 }
