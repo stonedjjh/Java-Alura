@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09803c00-6049-4e73-b996-f7f100268d87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/security/SecurityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java-Alura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java-Alura.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/controller/ConsultaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/ValidacionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/Consulta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ConsultaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DatosDetalleConsulta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DatosReservaConsulta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ReservaDeConsultas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/usuario/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/usuario/UsuarioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/security/SecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/security/SecurityConfigurations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/security/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/security/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/controller/MedicoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/controller/MedicoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/usuario/AutenticacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/usuario/AutenticacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Alura/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Alura/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +58,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ApiApplication.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "aplique-las-mejores-practicas-y-proteja-una-API-Rest",
-    "last_opened_file_path": "C:/Users/Stone Colombia/IdeaProjects/Java-Alura",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;spring-boot-3-documentar-probar-preparar-api-implementación&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Stone Colombia/IdeaProjects/Java-Alura&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="09803c00-6049-4e73-b996-f7f100268d87" name="Changes" comment="" />
