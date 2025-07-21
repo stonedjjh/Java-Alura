@@ -13,6 +13,7 @@ import med.voll.api.domain.medico.Medico;
 import med.voll.api.domain.paciente.Paciente;
 
 import java.time.LocalDateTime;
+import java.time.temporal.Temporal;
 
 //Se estable el nombre de la tabla en la BD
 @Table(name = "consultas")
@@ -41,5 +42,6 @@ public class Consulta {
     private Paciente paciente;
 
     private LocalDateTime fecha;
+
 
 }

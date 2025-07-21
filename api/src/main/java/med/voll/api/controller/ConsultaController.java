@@ -30,8 +30,12 @@ public class ConsultaController {
     @Transactional
     public ResponseEntity reservar(@RequestBody @Valid DatosReservaConsulta datos) {
 
+
+        var detalleConsulta =reserva.reservar(datos);
         reserva.reservar(datos);
         //se retorna un codigo 200 con los detalles de la consulta
-        return ResponseEntity.ok(new DatosDetalleConsulta(null, null, null, null));
+        //return ResponseEntity.ok(new DatosDetalleConsulta(null, null, null, null));
+        return ResponseEntity.ok(detalleConsulta);
     }
+
 }

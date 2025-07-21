@@ -5,11 +5,14 @@
 package med.voll.api.domain.consulta;
 
 import med.voll.api.domain.ValidacionException;
+import med.voll.api.domain.consulta.validaciones.ValidadorDeConsultas;
 import med.voll.api.domain.medico.Medico;
 import med.voll.api.domain.medico.MedicoRepository;
 import med.voll.api.domain.paciente.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 //Se especifica que es un servicio
 @Service
@@ -27,7 +30,19 @@ public class ReservaDeConsultas {
     @Autowired
     private ConsultaRepository consultaRepository;
 
-    public void reservar(DatosReservaConsulta datos){
+
+    /*
+    * Aqui java va a buscar todas las clases que implementes la interfaz ValidadorDeConsultas y
+    * creara una lista con todas las validaciones
+    * */
+
+    @Autowired
+    private List<ValidadorDeConsultas> validadores;
+
+
+
+    //se  cambio el tipo de retorno de void a detalle consulta
+    public DatosDetalleConsulta reservar(DatosReservaConsulta datos){
         //se verifica que sea un id de paciente valido sino lanza una excepcion
         if(!pacienteRepository.existsById(datos.idPaciente())){
             throw new ValidacionException("No existe un paciente con el id informado");
@@ -39,12 +54,19 @@ public class ReservaDeConsultas {
             throw new ValidacionException("No existe un médico con el id informado");
         }
 
+        //se recorre la lista de validaciones y se llama al metodo validar
+        validadores.forEach(v -> v.validar(datos));
+
         var medico = elegirMedico(datos);
+        if(medico == null){
+            throw new ValidacionException("No existe un médico disponible en ese horario");
+        }
         var paciente = pacienteRepository.findById(datos.idPaciente()).get();
         //se crea una variable de tipo Consulta
         var consulta = new Consulta(null, medico, paciente, datos.fecha());
         //se guarda en base de dato la consulta crear
         consultaRepository.save(consulta);
+        return new DatosDetalleConsulta(consulta);
     }
 
     private Medico elegirMedico(DatosReservaConsulta datos) {
