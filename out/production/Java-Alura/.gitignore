@@ -31,3 +31,24 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Directorios de salida de compilación
+/out/
+/target/
+/build/
+*.class
+
+# Archivos de IDE (IntelliJ IDEA)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Archivos de Maven Wrapper (si no quieres versionarlos)
+mvnw
+mvnw.cmd
+.mvn/
+
+# Archivos de configuración de Git que pueden generarse en subdirectorios
+.gitattributes
+.gitignore

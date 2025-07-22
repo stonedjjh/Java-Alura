@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09803c00-6049-4e73-b996-f7f100268d87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorCancelamientoDeConsulta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorConsultaConAnticipacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorDeConsultas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorFueraHorarioConsultas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorHorarioConAnticipacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorMedicoActivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorMedicoConOtraConsultaEnElMismoHorario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorPacienteActivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/validaciones/ValidadorPacienteSinOtraConsultaEnElMismoDia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/resources/db/migration/V7__create-table-consultas.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/med/voll/api/controller/ConsultaControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/med/voll/api/controller/MedicoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/test/java/med/voll/api/domain/medico/MedicoRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/controller/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/controller/ConsultaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/Consulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ConsultaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ConsultaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DatosDetalleConsulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/DatosDetalleConsulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ReservaDeConsultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/consulta/ReservaDeConsultas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/medico/MedicoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/paciente/PacienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/domain/paciente/PacienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/exceptions/GestorDeErrores.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/med/voll/api/infra/exceptions/GestorDeErrores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Alura/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Alura/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Alura/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Alura/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -63,17 +56,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;spring-boot-3-documentar-probar-preparar-api-implementación&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Stone Colombia/IdeaProjects/Java-Alura&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApiApplication.executor": "Run",
+    "JUnit.MedicoRepositoryTest.elegirMedicoAleatorioDisponibleEnLaFechaEscenario1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "spring-boot-3-documentar-probar-preparar-api-implementación",
+    "last_opened_file_path": "C:/Users/Stone Colombia/IdeaProjects/Java-Alura/api/src/main/resources",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stone Colombia\IdeaProjects\Java-Alura\api\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="med.voll.api.controller" />
+      <recent name="med.voll.api.domain.medico" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MedicoRepositoryTest.elegirMedicoAleatorioDisponibleEnLaFechaEscenario1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="med.voll.api.domain.medico.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="med.voll.api.domain.medico" />
+      <option name="MAIN_CLASS_NAME" value="med.voll.api.domain.medico.MedicoRepositoryTest" />
+      <option name="METHOD_NAME" value="elegirMedicoAleatorioDisponibleEnLaFechaEscenario1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MedicoRepositoryTest.elegirMedicoAleatorioDisponibleEnLaFechaEscenario1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="09803c00-6049-4e73-b996-f7f100268d87" name="Changes" comment="" />
